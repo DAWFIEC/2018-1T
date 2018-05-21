@@ -1,0 +1,43 @@
+<table class="blueTable">
+<thead>
+<tr>
+<th>Pa&iacute;s</th>
+<th>Federaci&oacute;n</th>
+<th>Grupo</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="3">
+<div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>Brasil</td>
+<td>Sudam&eacute;rica (CONMEBOL)</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Uruguay</td>
+<td>Sudam&eacute;rica (CONMEBOL)</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Inglaterra</td>
+<td>Europa (UEFA)</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Egipto</td>
+<td>&Aacute;frica (CAF)</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Ir&aacute;n</td>
+<td>Asia (AFC)</td>
+<td>B</td>
+</tr>
+</tbody>
+</table>
