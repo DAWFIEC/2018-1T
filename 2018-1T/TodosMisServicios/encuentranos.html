@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todos Mis Servicios.ec</title>
+	<meta name="description" content="Este sitio reune los servicios básicos del país">
+	<meta name="keywords" content="servicios, ecuador, daw, fiec, espol">
+	<meta name="author" content="Allan Avendaño">
+</head>
+<body>
+	<header>
+		<h1>TodosMisServicios.ec</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Principal</a></li>
+			<li>¿Quiénes somos?</li>
+			<li>Personal</li>
+			<li><a href="encuentranos.html">Encuéntranos</a></li>
+		</ul>
+	</nav>
+	<aside>
+		<div>
+			<h2>¿Cómo usar nuestro sitio?</h2>
+			<video width="320" height="240" controls>
+			  <source src="src/movie.mp4" type="video/mp4">
+			  <source src="src/movie.ogg" type="video/ogg">
+			  Your browser does not support the video tag.
+			</video>
+		</div>
+		<div>
+			<h2>Stream</h2>
+			<div id="stream-twitter"></div>
+		</div>
+	</aside>
+	<section>
+		<h2>Envíanos tus opiniones</h2>
+		<form action="/send-email" method="post">
+			Nombres completos: <input type="text" required="required"><br>
+			Correo electrónico: <input type="email" required="required" autocomplete="on"><br>
+			Utilidad del sitio:
+			<input type="radio" name="utilidad" id="nada" value="nada"> Nada<br>
+			<input type="radio" name="utilidad" id="poco" value="poco"> Poco<br>
+  			<input type="radio" name="utilidad" id="algo" value="algo"> Algo<br>
+			<input type="radio" name="utilidad" id="muy" value="muy"> Muy<br>
+			<input type="radio" name="utilidad" id="completamente" value="completamenten"> Completamente<br>
+			Provincia: 
+			<select name="provincias">
+			  <option value="azuay" selected="selected">Azuay</option>
+			  <option value="guayas">Guayas</option>
+			  <option value="pichincha">Pichincha</option>
+			  <option value="zamora">Zamora Chinchipe</option>
+			</select><br>
+			Comentarios:
+			<textarea name="comentarios" rows="10" cols="30">Ingrese aquí sus comentarios</textarea><br>
+			<button type="button">Enviar</button>
+		</form>
+	</section>
+	<footer></footer>
+</body>
+</html>
