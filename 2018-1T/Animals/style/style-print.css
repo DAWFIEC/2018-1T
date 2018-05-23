@@ -1,0 +1,17 @@
+img, footer {
+	display: none;
+}
+
+div.card {
+  display: inline-block;
+  width: 30%;
+}
+
+div.card p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+section#central {
+	text-align: center;
+}
