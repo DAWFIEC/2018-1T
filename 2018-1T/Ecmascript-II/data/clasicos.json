@@ -1,0 +1,19 @@
+{
+	"libros": [
+		{
+			"titulo":"20.000 Leguas de Viaje Submarino",
+			"autor": "Julio Verne",
+			"resumen": "En la segunda mitad del siglo XIX, la desaparición de numerosos barcos sin una explicación clara hace que navegar los mares ya no sea seguro. Los datos señalan a un monstruo marino, mas grande que una ballena, dotado de una gran velocidad, potencia y que se torna, a veces, fosforescente.Una expedición que incluye al profesor Arronax, un naturalista, saldrá a la mar a intentar develar el misterio. Pero pronto serán atacados por la bestia y los sobrevivientes serán testigos de algo que no creerían si..."
+		},
+		{
+			"titulo":"Alrededor de la Luna",
+			"autor":"Julio Verne",
+			"resumen":"Este viaje Alrededor de la Luna, continuación del relato titulado De la Tierra a la Luna, es la prolongación novelada del Verne que sabe combinar, con el artificio del narrador vigoroso, los mitos lunares imaginados por el hombre desde los inicios de la humanidad con los conocimientos científicos del siglo XIX. Esa mezcla, ese tejido de fantasía y conocimientos, es lo que constituye el aporte original de Verne, que funda el género de una ciencia-ficción que la realidad se encargó de confirmar en gran..."
+		},
+		{
+			"titulo":"Ana Karenina",
+			"autor":"León Tolstoi",
+			"resumen":"En Ana Karenina, Tolstoi, desmenuza las frivolidades y las enfermizas pasiones del zarismo, en contraposición al personaje femenino que da título a la novela. Sobre la decadencia del imperio, que Tolstoi ya intuye irreversible, Ana, ya sea en las sombras de su gabinete o en la infinitud de los campos, se recorta como un fulgor constante. De este modo, el realismo se rodea de la evanescencia de un sueño que el amanecer, aunque lejano, ya comienza a desgarrar. En esta gran novela se narra el ... "
+		}
+	]	
+}

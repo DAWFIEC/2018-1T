@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Literator</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/navbar-fixed-top.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Literator</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Principal</a></li>
+						<li><a href="#about">Acerca</a></li>
+						<li><a href="#contact">Contacto</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorías <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Clásicos</a></li>
+								<li><a href="#">Citas</a></li>
+								<li><a href="#">Audiolibros</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Top Ten</li>
+								<li><a href="#">Paulo Coelho</a></li>
+								<li><a href="#">Edgar Allan Poe</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Literator</h1>
+				<p>El mejor buscador de libros digitales de la Web</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="input-group">
+						<input id="texto" type="text" class="form-control">
+						<span class="input-group-btn">
+							<button id="buscar" class="btn btn-default" type="button">Buscar</button>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="container">
+			<div class="page-header">
+				<h2>Citas</h2>
+			</div>
+			<div id="quotes" class="row">
+				<div id="quote1" class="well" author="Frasious" date="80 A.C.">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+				</div>
+				<div id="quote2" class="well" author="Felinis" date="100 A.C.">
+					Phasellus in nunc ut mi faucibus sagittis. Proin interdum, eros a porta pretium, quam mauris varius urna, vitae iaculis tellus velit a sapien. Vivamus non odio interdum, volutpat odio at, consectetur est. Mauris metus magna, molestie ac dui at, tempor aliquam massa. Mauris fermentum lectus in ante imperdiet fermentum. Nullam dignissim sem eget libero facilisis pretium. Proin aliquam eu tortor vitae tincidunt. Cras venenatis malesuada molestie. Aliquam erat volutpat. Suspendisse rutrum et mauris vitae semper.
+				</div>
+				<div id="quote3" class="well" author="Theodinisious" date="95 A.C">
+					Mauris at justo vitae nibh consequat accumsan a sit amet purus. Maecenas ullamcorper augue posuere consequat imperdiet. Praesent ut accumsan orci, ut lobortis ipsum. Ut commodo egestas facilisis. Quisque eget semper est. Nunc fringilla ultricies mollis. Vestibulum dignissim nisi tempus commodo pretium. Curabitur interdum lacus id blandit tempor. Sed a aliquet tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In tristique tincidunt mauris eu congue. Nullam dapibus molestie mauris quis lacinia. Ut ultrices lobortis tortor ut consequat.
+				</div>
+			</div>
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/app.js"></script>
+		</body>
+	</html>

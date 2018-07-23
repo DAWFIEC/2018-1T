@@ -1,0 +1,11 @@
+body {
+	min-height: auto;
+}
+
+.ocultar {
+	display: none;
+}
+
+.mostrar {
+	display: block;
+}
