@@ -1,0 +1,47 @@
+google cloud platform
+https://cloud.google.com/?hl=es
+
+Flask by Example – Setting up Postgres, SQLAlchemy, and Alembic
+https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
+
+Postgres Quickstart
+https://cloud.google.com/sql/docs/postgres/quickstart
+
+gcloud sql connect tms --user=postgres
+
+user: postgres
+pwd: dawespol2018
+
+CREATE TABLE usuario (nombre VARCHAR(255), direccion VARCHAR(255), keyID SERIAL PRIMARY KEY);
+
+INSERT INTO usuario (nombre, direccion) values ('Pepita Suárez', 'Sauces II');
+INSERT INTO usuario (nombre, direccion) values ('Andrés Medina', 'Los Vergeles');
+INSERT INTO usuario (nombre, direccion) values ('Andrea Benavides', 'Las Malvinas');
+INSERT INTO usuario (nombre, direccion) values ('Gonzalo Narea', 'La FAE');
+
+SELECT * FROM usuario;
+
+export SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://postgres:dawespol2018@127.0.0.1:5432/postgres
+
+import psycopg2
+conn = psycopg2.connect(user='postgres', password='dawespol2018',host='localhost', port='5432')
+
+/cloud_sql_proxy -instances=daw-espol-210423:us-central1:tms=tcp:5432 -credential_file=daw-espol-210423-070ada005397.json 
+
+https://cloud.google.com/sql/docs/postgres/connect-external-app
+https://cloud.google.com/appengine/docs/flexible/python/using-cloud-sql-postgres
+https://cloud.google.com/sql/docs/postgres/connect-admin-proxy
+
+Setting Up Authentication for Server to Server Production Applications
+https://cloud.google.com/docs/authentication/production
+
+MLab is the leading Database-as-a-Service for MongoDB, powering over half a million deployments worldwide.
+https://mlab.com/home
+
+Firebase es la plataforma móvil de Google que te ayuda a desarrollar apps de alta calidad con rapidez y hacer crecer tu empresa.
+https://firebase.google.com/?hl=es-419
+https://burhan.io/flask-web-api-with-firebase/
+
+Heroku 
+https://www.heroku.com/
+https://developer.salesforce.com/blogs/developer-relations/2016/05/heroku-connect-flask-psycopg2.html
