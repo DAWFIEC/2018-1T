@@ -26,11 +26,18 @@ export SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://postgres:dawespol2018@127.0
 import psycopg2
 conn = psycopg2.connect(user='postgres', password='dawespol2018',host='localhost', port='5432')
 
+osx
 /cloud_sql_proxy -instances=daw-espol-210423:us-central1:tms=tcp:5432 -credential_file=daw-espol-210423-070ada005397.json 
+
+windows
+set GOOGLE_APPLICATION_CREDENTIALS="C:\Users\PC\Documents\ESPOL\DAW\2018-1T\MVC\daw-espol-210423-070ada005397.json"
+cloud_sql_proxy.exe --instances=daw-espol-210423:us-central1:tms=tcp:5432 psql -U postgres -h 127.0.0.1
 
 https://cloud.google.com/sql/docs/postgres/connect-external-app
 https://cloud.google.com/appengine/docs/flexible/python/using-cloud-sql-postgres
 https://cloud.google.com/sql/docs/postgres/connect-admin-proxy
+https://cloud.google.com/docs/authentication/production
+https://cloud.google.com/sql/docs/postgres/sql-proxy
 
 Setting Up Authentication for Server to Server Production Applications
 https://cloud.google.com/docs/authentication/production
@@ -45,3 +52,6 @@ https://burhan.io/flask-web-api-with-firebase/
 Heroku 
 https://www.heroku.com/
 https://developer.salesforce.com/blogs/developer-relations/2016/05/heroku-connect-flask-psycopg2.html
+
+
+https://todosmisservicios.herokuapp.com/
