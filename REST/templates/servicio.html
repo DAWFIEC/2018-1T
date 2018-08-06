@@ -21,16 +21,16 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/">Principal</a>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Principal
+								<span class="sr-only">(current)</span>
+							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Acerca</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Servicios
-								<span class="sr-only">(current)</span>
-							</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Servicios</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Contáctenos</a>
@@ -43,21 +43,31 @@
 		<div class="container">
 			
 			<!-- Introduction Row -->
-			<h1>Cuentas</h1>
-			<p>Las cuentas analizadas por {{usuario.nombre}}:</p>
-			<!-- Team Members Row -->
-			<div class="row">
-				{% for key,values in resultado.items() %}
-					<div class="col-lg-12">
-						<h2 class="my-4">{{key}}</h2>
+			<h1>Servicio</h1>
+			<div class="col-md-6">
+				<form action="/accion/{{servicio.id}}" method="post">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Nombre: </label>
+						<input class="form-control" type="text" placeholder="Juan Pérez" readonly>
 					</div>
-					{% for value in values %}
-						<div class="col-lg-12 col-sm-12 text-left">
-							{{value}}
-						</div>
-					{% endfor %}
-				{% endfor %}
+					<div class="form-group">
+						<label for="exampleInputEmail2">Nombre del servicio: </label>
+						<input class="form-control" type="text" placeholder="{{servicio.nombre}}" readonly>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail3">Fecha de registro: </label>
+						<input class="form-control" type="text" placeholder="{{servicio.telefono}}" readonly>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail4">Dirección: </label>
+						<input class="form-control" type="text" placeholder="{{servicio.direccion}}" >
+					</div>
+					<button type="submit" class="btn btn-primary"  name="accion" value="Editar">Editar</button>
+					<button type="submit" class="btn btn-primary"name="accion" value="Eliminar">Eliminar</button>
+				</form>
 			</div>
+			
+			
 		</div>
 		<!-- /.container -->
 		<!-- Footer -->

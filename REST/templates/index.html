@@ -21,16 +21,16 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/">Principal</a>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Principal
+								<span class="sr-only">(current)</span>
+							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Acerca</a>
 						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Servicios
-								<span class="sr-only">(current)</span>
-							</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Servicios</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Contáctenos</a>
@@ -43,20 +43,38 @@
 		<div class="container">
 			
 			<!-- Introduction Row -->
-			<h1>Cuentas</h1>
-			<p>Las cuentas analizadas por {{usuario.nombre}}:</p>
+			<h1>Servicios</h1>
+			<p>Aquí encontrarás los servicios de Juan Pérez.</p>
 			<!-- Team Members Row -->
 			<div class="row">
-				{% for key,values in resultado.items() %}
-					<div class="col-lg-12">
-						<h2 class="my-4">{{key}}</h2>
-					</div>
-					{% for value in values %}
-						<div class="col-lg-12 col-sm-12 text-left">
-							{{value}}
-						</div>
-					{% endfor %}
-				{% endfor %}
+				<div class="col-2">
+					<h2 class="my-4">Juan Pérez</h2>
+					<img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/100x100" alt="">
+				</div>
+				<div class="col-10 float-right">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Nombre</th>
+								<th scope="col">Dirección</th>
+								<th scope="col">Teléfono</th>
+								<th scope="col">Acción</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for servicio in servicios %}
+								<tr>
+									<th scope="row">{{loop.index}}</th>
+									<td>{{servicio.nombre}}</td>
+									<td>{{servicio.direccion}}</td>
+									<td>{{servicio.telefono}}</td>
+									<td><a href="/ver/{{servicio.id}}">Ver</a></td>
+								</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 		<!-- /.container -->
